@@ -1,0 +1,35 @@
+@mixin min($bp, $max: "null", $device: "screen") {
+  @if $max=="null" {
+    @media only #{$device} and (min-width: #{$bp}) {
+      @content;
+    }
+  }
+
+  @else {
+    @media only #{$device} and (min-width: #{$bp}) and (max-width: #{$max}) {
+      @content;
+    }
+  }
+}
+
+@mixin create-selectors($breakpoint: null) {
+  $infix: if($breakpoint==null, '', '-#{$breakpoint}');
+
+  @for $i from 1 through $columns {
+    .col#{$infix}-#{$i} {
+      grid-column-end: span $i;
+    }
+
+    .col-offset#{$infix}-#{$i} {
+      grid-column-start: $i + 1;
+    }
+
+    .row#{$infix}-#{$i} {
+      grid-row-end: span $i;
+    }
+
+    .row-offset#{$infix}-#{$i} {
+      grid-row-start: $i + 1;
+    }
+  }
+}

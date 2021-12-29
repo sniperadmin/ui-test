@@ -1,0 +1,18 @@
+{
+  "name": "ui-test",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "remusjs": "^0.1.1",
+    "sass": "^1.45.1",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  }
+}

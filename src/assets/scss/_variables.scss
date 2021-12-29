@@ -1,0 +1,32 @@
+$columns: 12;
+$gutter: 30px;
+$breakpoints: (xs: 375px,
+  sm: 768px,
+  md: 960px,
+  lg: 1170px,
+  xl: 1280px);
+
+$container-sizes: (sm: map-get($breakpoints, sm) - 228,
+  md: map-get($breakpoints, md) - 240,
+  lg: map-get($breakpoints, md) - 32,
+  xl: map-get($breakpoints, md) - 60,
+);
+
+$colors:("primary": hsl(246, 80%, 60%),
+  "secondary": #1d204b,
+  "orange": hsl(15, 100%, 70%),
+  "blue": hsl(195, 74%, 62%),
+  "pink": hsl(348, 100%, 68%),
+  "indigo": hsl(264, 64%, 52%),
+  "success": hsl(145, 58%, 55%),
+  "warning": hsl(43, 84%, 65%),
+  "dark": hsl(226, 43%, 10%),
+  "dark-blue": hsl(235, 46%, 20%),
+  "violet": hsl(235, 45%, 61%),
+  "light-violet": hsl(236, 100%, 87%));
+
+$border-rads: (xs: 0,
+  sm: 0.7rem,
+  md: 1rem,
+  lg: 1.5rem,
+  xl: 2rem);
