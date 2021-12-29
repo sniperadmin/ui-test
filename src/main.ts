@@ -1,19 +1,16 @@
-import './assets/scss/main.scss'
-import Handlebars from "handlebars";
-// import Remus from 'remusjs';
+import './style.css'
+import Vue from 'vue'
+import App from './App.vue'
+import vuetify from './plugins/vuetify'
+import './sass/variables.scss'
+// const app = document.querySelector<HTMLDivElement>('#app')!
 
-let app = document.querySelector<HTMLDivElement>("#app")!
+// app.innerHTML = `
+//   <h1>Hello Vite!</h1>
+//   <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
+// `
 
-
-// let remus = new Remus({
-//   element: '.remus', // selector for main Remus container
-//   height: null // height value in pixels if you want it to be fixed - optional
-// });
-
-let templateString = document.querySelector("#entry-template")!.innerHTML
-const template = Handlebars.compile(templateString);
-
-app.innerHTML += template({
-  name: 'Jeremy Robson',
-  timeCategories: [{ category: 'Daily' }, { category: 'Weekly' }, { category: 'Monthly' }]
-})
+new Vue({
+  vuetify,
+  render: (h) => h(App)
+}).$mount('#app')
