@@ -14,123 +14,41 @@
   <script id="entry-template" type="text/x-handlebars-template">
     <div>
       <h1>Hello Vite!</h1>
-      <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
       <div class="container">
         <div class="grid">
-          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-4">
-            left card
-            <div class="primary rounded-sm">
-              <div class="col-md-10">
-                <img src="./src/assets/images/image-jeremy.png" width="50" height="50" alt="image-jeremy">
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+            <!-- left card -->
+            <div class="secondary rounded-sm">
+              <div class="primary rounded-sm">
+                <div class="col-md-10">
+                  <img src="./src/assets/images/image-jeremy.png" width="50" height="50" alt="image-jeremy">
+                </div>
+                <div>
+                  <small>
+                  Report for
+                  </small>
+                </div>
+                <h2>
+                  {{name}}
+                </h2>
               </div>
-              <div>
-                <small>
-                Report for
-                </small>
-              </div>
-              <h2>
-                {{name}}
-              </h2>
-            </div>
 
-            <div class="secondary">
               <ul>
                 {{#each timeCategories}}
                 <li>{{category}}</li>
                 {{/each}}
               </ul>
-              Daily
-              Weekly
-              Monthly
             </div>
           </div>
 
           <div class="col-md-9 col-sm-12 col-xs-12">
-            right cards
-  
-            Work
-            5hrs
-            <!-- daily -->
-            Previous - 7hrs
-            <!-- daily -->
-            32hrs
-            <!-- weekly -->
-            Previous - 36hrs
-            <!-- weekly -->
-            103hrs
-            <!-- monthly -->
-            Previous - 128hrs
-            <!-- monthly -->
-  
-            Play
-            1hr
-            <!-- daily -->
-            Previous - 2hrs
-            <!-- daily -->
-            10hrs
-            <!-- weekly -->
-            Previous - 8hrs
-            <!-- weekly -->
-            23hrs
-            <!-- monthly -->
-            Previous - 29hrs
-            <!-- monthly -->
-  
-            Study
-            0hrs
-            <!-- daily -->
-            Previous - 1hr
-            <!-- daily -->
-            4hrs
-            <!-- weekly -->
-            Previous - 7hrs
-            <!-- weekly -->
-            13hrs
-            <!-- monthly -->
-            Previous - 19hrs
-            <!-- monthly -->
-  
-            Exercise
-            1hr
-            <!-- daily -->
-            Previous - 1hr
-            <!-- daily -->
-            4hrs
-            <!-- weekly -->
-            Previous - 5hrs
-            <!-- weekly -->
-            11hrs
-            <!-- monthly -->
-            Previous - 18hrs
-            <!-- monthly -->
-  
-            Social
-            1hr
-            <!-- daily -->
-            Previous - 3hrs
-            <!-- daily -->
-            5hrs
-            <!-- weekly -->
-            Previous - 10hrs
-            <!-- weekly -->
-            21hrs
-            <!-- monthly -->
-            Previous - 23hrs
-            <!-- monthly -->
-  
-            Self Care
-            0hrs
-            <!-- daily -->
-            Previous - 1hr
-            <!-- daily -->
-            2hrs
-            <!-- weekly -->
-            Previous - 2hrs
-            <!-- weekly -->
-            7hrs
-            <!-- monthly -->
-            Previous - 11hrs
-            <!-- monthly -->
+            <div class="grid">
+              {{#each kpis}}
+              <div class="col-md-4">
+                {{title}}
+              </div>
+              {{/each}}
+            </div>
           </div>
         </div>
       </div>

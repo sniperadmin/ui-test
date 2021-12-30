@@ -23,13 +23,5 @@
     .col-offset#{$infix}-#{$i} {
       grid-column-start: $i + 1;
     }
-
-    .row#{$infix}-#{$i} {
-      grid-row-end: span $i;
-    }
-
-    .row-offset#{$infix}-#{$i} {
-      grid-row-start: $i + 1;
-    }
   }
 }
