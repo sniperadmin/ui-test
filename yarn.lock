@@ -275,11 +275,6 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-remusjs@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/remusjs/-/remusjs-0.1.1.tgz#8e5de31769098a913edeac228596786a46b53d83"
-  integrity sha512-ZpYM3UGuJLF0gEUDApDWwsggDc7NEeOsE9uMBUhHLPKCBokH9QmzwwJfZIs+q2muV4i9Tnn/1ovwhfsf6tTUJg==
-
 resolve@^1.20.0:
   version "1.20.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.20.0.tgz#629a013fb3f70755d6f0b7935cc1c2c5378b1975"
@@ -332,9 +327,9 @@ uglify-js@^3.1.4:
   integrity sha512-qZukoSxOG0urUTvjc2ERMTcAy+BiFh3weWAkeurLwjrCba73poHmG3E36XEjd/JGukMzwTL7uCxZiAexj8ppvQ==
 
 vite@^2.7.2:
-  version "2.7.9"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.7.9.tgz#c72d8817cdddbb127daed0c8f87fbca4e7754a81"
-  integrity sha512-CyopIJIRrc26Wnbkch5BCHFhQodzeV4jjSegLAEw1RImvXSuoOo2SfpEW9zRVi188WmjJwCqCaoG25C0r4nekw==
+  version "2.7.10"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.7.10.tgz#d12c4c10e56a0ecf7890cb529c15996c6111218f"
+  integrity sha512-KEY96ntXUid1/xJihJbgmLZx7QSC2D4Tui0FdS0Old5OokYzFclcofhtxtjDdGOk/fFpPbHv9yw88+rB93Tb8w==
   dependencies:
     esbuild "^0.13.12"
     postcss "^8.4.5"

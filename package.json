@@ -7,7 +7,6 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "remusjs": "^0.1.1",
     "sass": "^1.45.1",
     "typescript": "^4.4.4",
     "vite": "^2.7.2"
