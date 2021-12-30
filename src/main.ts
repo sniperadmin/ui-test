@@ -35,7 +35,7 @@ app.innerHTML += template({
     },
     {
       title: 'Play',
-      color: 'secondary',
+      color: 'blue',
       icon: iconPlay,
       daily: {
         duration: 1,

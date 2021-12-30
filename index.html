@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
   <title>Frontend Mentor | Time tracking dashboard</title>
 </head>
 
@@ -44,20 +45,46 @@
           <div class="col-md-9 col-sm-12 col-xs-12">
             <div class="grid">
               {{#each kpis}}
-              <div class="col-md-4">
-                {{title}}
+              <div class="col-md-4 col-sm-12 col-xs-12 card-group">
+                <div class="{{color}} rounded-sm">
+                  <div class="kpi-icon-wrap">
+                    <img src="{{icon}}" alt="{{title}}" width="50" height="50">
+                  </div>
+
+                  <div class="dark-blue rounded-sm" style="margin-top: -20px;">
+                    <div class="grid pr-2">
+                      <p class="col-md-4 col-sm-6 col-xs-6">
+                        {{title}}
+                      </p>
+
+                      <p class="col-md-6 col-sm-6 col-xs-6">
+                        <i class="mdi mdi-dots-horizontal"></i>
+                      </p>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12 col-sm-6 col-xs-6">
+                        <h2>{{ daily.duration }}hrs</h2>
+                      </div>
+
+                      <div class="col-md-12 col-sm-6 col-xs-6">
+                        <p>Last Week - {{ daily.previous }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               {{/each}}
             </div>
           </div>
         </div>
       </div>
-  
+
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">Your Name Here</a>.
       </div>
-  
+
     </div>
   </script>
   <script type="module" src="/src/main.ts"></script>

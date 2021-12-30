@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: content-box;
 }
 
 body {
@@ -77,4 +78,29 @@ $width in $breakpoints {
   @media (min-width: $width) {
     @include create-selectors($breakpoint)
   }
+}
+
+@for $i from 1 through 12 {
+  .p-#{$i} {
+    padding: $i * 3rem;
+  }
+
+  .pr-#{$i} {
+    padding-right: $i * 3rem;
+  }
+}
+
+.kpi-icon-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+
+  & img {
+    object-fit: fill;
+  }
+}
+
+.card-group {
+  width: 100%;
 }
