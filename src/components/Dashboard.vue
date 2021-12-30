@@ -2,7 +2,7 @@
   <v-container>
     <v-row no-gutters class="justify-content-center">
       <v-col :cols="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs ? 12 : 3" class="mb-4">
-        <ProfileCard />
+        <TheProfileCard />
       </v-col>
 
       <!-- right side -->
